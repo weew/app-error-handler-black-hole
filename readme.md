@@ -23,7 +23,7 @@ To enable this provider simply register it on the kernel.
 ```php
 $app->getKernel()->addProviders([
     ErrorHandlingProvider::class,
-    BlackHoleErrorHandlingProvider::class,
+    BlackHoleErrorHandlerProvider::class,
 ]);
 ```
 

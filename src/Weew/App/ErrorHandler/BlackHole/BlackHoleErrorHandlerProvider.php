@@ -5,9 +5,9 @@ namespace Weew\App\ErrorHandler\BlackHole;
 use Weew\Container\IContainer;
 use Weew\ErrorHandler\IErrorHandler;
 
-class BlackHoleErrorHandlingProvider {
+class BlackHoleErrorHandlerProvider {
     /**
-     * BlackHoleErrorHandlingProvider constructor.
+     * BlackHoleErrorHandlerProvider constructor.
      *
      * @param IContainer $container
      */

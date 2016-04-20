@@ -6,15 +6,15 @@ use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Weew\App\ErrorHandler\BlackHole\BlackHoleErrorHandler;
 use Weew\App\ErrorHandler\BlackHole\BlackHoleErrorHandlerConfig;
-use Weew\App\ErrorHandler\BlackHole\BlackHoleErrorHandlingProvider;
+use Weew\App\ErrorHandler\BlackHole\BlackHoleErrorHandlerProvider;
 use Weew\App\ErrorHandler\BlackHole\IBlackHoleErrorHandlerConfig;
 use Weew\Container\IContainer;
 use Weew\ErrorHandler\IErrorHandler;
 
 /**
- * @mixin BlackHoleErrorHandlingProvider
+ * @mixin BlackHoleErrorHandlerProvider
  */
-class BlackHoleErrorHandlingProviderSpec extends ObjectBehavior {
+class BlackHoleErrorHandlerProviderSpec extends ObjectBehavior {
     function let(IContainer $container) {
         $container->set(IBlackHoleErrorHandlerConfig::class, BlackHoleErrorHandlerConfig::class)->shouldBeCalled();;
 
@@ -22,7 +22,7 @@ class BlackHoleErrorHandlingProviderSpec extends ObjectBehavior {
     }
 
     function it_is_initializable() {
-        $this->shouldHaveType(BlackHoleErrorHandlingProvider::class);
+        $this->shouldHaveType(BlackHoleErrorHandlerProvider::class);
     }
 
     function it_does_not_enable_error_handling_if_not_enabled(
