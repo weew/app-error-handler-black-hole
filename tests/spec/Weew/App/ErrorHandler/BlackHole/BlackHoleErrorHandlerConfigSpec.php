@@ -24,4 +24,23 @@ class BlackHoleErrorHandlerConfigSpec extends ObjectBehavior {
     function it_returns_enabled() {
         $this->getEnabled()->shouldBe(true);
     }
+
+    function it_is_disabled_by_default() {
+        $this->beConstructedWith(new Config());
+        $this->getEnabled()->shouldBe(false);
+    }
+
+    function it_is_not_enabled_if_disabled_is_set_to_true() {
+        $config = new Config();
+        $config->set(BlackHoleErrorHandlerConfig::DISABLED, true);
+        $this->beConstructedWith($config);
+        $this->getEnabled()->shouldBe(false);
+    }
+
+    function it_is_enabled_if_disabled_is_set_to_false() {
+        $config = new Config();
+        $config->set(BlackHoleErrorHandlerConfig::DISABLED, false);
+        $this->beConstructedWith($config);
+        $this->getEnabled()->shouldBe(true);
+    }
 }

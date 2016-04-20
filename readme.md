@@ -34,6 +34,8 @@ This is how the config might look like in yaml:
 ```yaml
 black_hole_error_handler:
   enabled: true
+  # or
+  disabled: false
 ```
 
 

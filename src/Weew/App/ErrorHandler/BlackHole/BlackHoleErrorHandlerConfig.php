@@ -6,6 +6,7 @@ use Weew\Config\IConfig;
 
 class BlackHoleErrorHandlerConfig {
     const ENABLED = 'black_hole_error_handler.enabled';
+    const DISABLED = 'black_hole_error_handler.disabled';
 
     /**
      * @var IConfig
@@ -25,6 +26,17 @@ class BlackHoleErrorHandlerConfig {
      * @return bool
      */
     public function getEnabled() {
-        return $this->config->get(self::ENABLED, false);
+        $enabled = $this->config->get(self::ENABLED);
+        $disabled = $this->config->get(self::DISABLED);
+
+        if ($enabled !== null) {
+            return $enabled;
+        }
+
+        if ($disabled !== null) {
+            return ! $disabled;
+        }
+
+        return false;
     }
 }
