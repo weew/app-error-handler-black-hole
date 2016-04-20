@@ -4,7 +4,7 @@ namespace Weew\App\ErrorHandler\BlackHole;
 
 use Weew\Config\IConfig;
 
-class BlackHoleErrorHandlerConfig {
+class BlackHoleErrorHandlerConfig implements IBlackHoleErrorHandlerConfig {
     const ENABLED = 'black_hole_error_handler.enabled';
     const DISABLED = 'black_hole_error_handler.disabled';
 

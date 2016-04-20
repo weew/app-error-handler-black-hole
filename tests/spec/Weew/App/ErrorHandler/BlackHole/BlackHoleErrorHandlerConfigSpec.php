@@ -5,6 +5,7 @@ namespace tests\spec\Weew\App\ErrorHandler\BlackHole;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Weew\App\ErrorHandler\BlackHole\BlackHoleErrorHandlerConfig;
+use Weew\App\ErrorHandler\BlackHole\IBlackHoleErrorHandlerConfig;
 use Weew\Config\Config;
 
 /**
@@ -19,6 +20,7 @@ class BlackHoleErrorHandlerConfigSpec extends ObjectBehavior {
 
     function it_is_initializable() {
         $this->shouldHaveType(BlackHoleErrorHandlerConfig::class);
+        $this->shouldHaveType(IBlackHoleErrorHandlerConfig::class);
     }
 
     function it_returns_enabled() {
