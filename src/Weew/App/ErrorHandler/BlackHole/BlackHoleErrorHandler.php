@@ -2,6 +2,7 @@
 
 namespace Weew\App\ErrorHandler\BlackHole;
 
+use Exception;
 use Weew\ErrorHandler\IErrorHandler;
 
 class BlackHoleErrorHandler {
@@ -25,6 +26,6 @@ class BlackHoleErrorHandler {
     public function enable() {
         // suppress all errors
         $this->errorHandler->addErrorHandler(function() {return true;});
-        $this->errorHandler->addExceptionHandler(function() {return true;});
+        $this->errorHandler->addExceptionHandler(function(Exception $ex) {return true;});
     }
 }
