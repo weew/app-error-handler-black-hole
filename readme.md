@@ -1,20 +1,20 @@
 # BlackHole error handler
 
-[![Build Status](https://img.shields.io/travis/weew/php-app-error-handler-black-hole.svg)](https://travis-ci.org/weew/php-app-error-handler-black-hole)
-[![Code Quality](https://img.shields.io/scrutinizer/g/weew/php-app-error-handler-black-hole.svg)](https://scrutinizer-ci.com/g/weew/php-app-error-handler-black-hole)
-[![Test Coverage](https://img.shields.io/coveralls/weew/php-app-error-handler-black-hole.svg)](https://coveralls.io/github/weew/php-app-error-handler-black-hole)
-[![Version](https://img.shields.io/packagist/v/weew/php-app-error-handler-black-hole.svg)](https://packagist.org/packages/weew/php-app-error-handler-black-hole)
-[![Licence](https://img.shields.io/packagist/l/weew/php-app-error-handler-black-hole.svg)](https://packagist.org/packages/weew/php-app-error-handler-black-hole)
+[![Build Status](https://img.shields.io/travis/weew/app-error-handler-black-hole.svg)](https://travis-ci.org/weew/app-error-handler-black-hole)
+[![Code Quality](https://img.shields.io/scrutinizer/g/weew/app-error-handler-black-hole.svg)](https://scrutinizer-ci.com/g/weew/app-error-handler-black-hole)
+[![Test Coverage](https://img.shields.io/coveralls/weew/app-error-handler-black-hole.svg)](https://coveralls.io/github/weew/app-error-handler-black-hole)
+[![Version](https://img.shields.io/packagist/v/weew/app-error-handler-black-hole.svg)](https://packagist.org/packages/weew/app-error-handler-black-hole)
+[![Licence](https://img.shields.io/packagist/l/weew/app-error-handler-black-hole.svg)](https://packagist.org/packages/weew/app-error-handler-black-hole)
 
 ## Table of contents
 
 ## Installation
 
-`composer require weew/php-app-error-handler-black-hole`
+`composer require weew/app-error-handler-black-hole`
 
 ## Introduction
 
-This error handler suppresses all occurring errors makes use of the [weew/php-app-error-handler](https://github.com/weew/php-app-error-handler).
+This error handler suppresses all occurring errors makes use of the [weew/app-error-handler](https://github.com/weew/app-error-handler).
 
 ## Usage
 
